@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AfriTalent connecte les entreprises avec des freelances tech africains vérifiés.">
+    <title>AfriTalent | Talents tech africains</title>
+    <link rel="icon" href="images/afritalent-logo.svg" type="image/svg+xml">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top" id="main-navbar" aria-label="Navigation principale">
+        <div class="container">
+            <a href="index.html" class="navbar-brand fw-bold" aria-label="AfriTalent - Accueil">
+                <img src="images/afritalent-logo.svg" alt="" aria-hidden="true">
+                <span class="brand-text">Afri<span>Talent</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Ouvrir le menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li class="nav-item"><a href="freelances.html" class="nav-link">Freelances</a></li>
+                    <li class="nav-item"><a href="tarifs.html" class="nav-link">Tarifs</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">À propos</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <button id="theme-toggle" class="theme-toggle" type="button" data-theme-toggle aria-label="Changer le thème">
+                            <span id="theme-icon" class="theme-symbol" aria-hidden="true">🌙</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="site-main">
+        <section class="hero-section">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <p class="section-kicker">Plateforme freelance tech</p>
+                        <h1>Connectez vos projets aux meilleurs talents d'Afrique.</h1>
+                        <p class="hero-lead">AfriTalent aide les entreprises à trouver rapidement des développeurs, designers et experts data fiables, tout en donnant plus de visibilité aux freelances africains.</p>
+                        <div class="hero-actions">
+                            <a href="contact.html" class="btn btn-primary btn-lg">Rejoindre AfriTalent</a>
+                            <a href="freelances.html" class="btn btn-outline-primary btn-lg">Voir les talents</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="hero-image" src="images/photo-hero-collaboration.jpg" alt="Deux professionnels collaborent autour d'un ordinateur portable">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-band" aria-label="Chiffres clés">
+            <div class="container">
+                <div class="stats-grid">
+                    <div>
+                        <strong id="count-freelances" data-goal="2500">0</strong>
+                        <span>Freelances inscrits</span>
+                    </div>
+                    <div>
+                        <strong id="count-companies" data-goal="800">0</strong>
+                        <span>Entreprises partenaires</span>
+                    </div>
+                    <div>
+                        <strong id="count-missions" data-goal="12000">0</strong>
+                        <span>Missions réalisées</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-block">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">Méthode</p>
+                    <h2>Une collaboration simple de bout en bout.</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <article class="feature-card">
+                            <i class="bi bi-person-check" aria-hidden="true"></i>
+                            <h3>Profils vérifiés</h3>
+                            <p>Compétences, expériences et disponibilité sont présentées clairement.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <article class="feature-card">
+                            <i class="bi bi-search" aria-hidden="true"></i>
+                            <h3>Recherche rapide</h3>
+                            <p>Filtrez les talents par spécialité, niveau et type de mission.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <article class="feature-card">
+                            <i class="bi bi-chat-dots" aria-hidden="true"></i>
+                            <h3>Échanges directs</h3>
+                            <p>Discutez des besoins, du périmètre et des délais avant de lancer.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <article class="feature-card">
+                            <i class="bi bi-shield-check" aria-hidden="true"></i>
+                            <h3>Paiement sécurisé</h3>
+                            <p>Les missions restent encadrées jusqu'à la validation du travail.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-block section-soft">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-5">
+                        <p class="section-kicker">Pour qui ?</p>
+                        <h2>Un espace pensé pour les deux côtés du marché.</h2>
+                        <p class="section-text">Les entreprises gagnent du temps sur le sourcing. Les freelances gagnent en crédibilité, en visibilité et en accès à des missions plus ambitieuses.</p>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="split-list">
+                            <div>
+                                <i class="bi bi-building" aria-hidden="true"></i>
+                                <h3>Entreprises</h3>
+                                <p>Accès à des profils qualifiés, sélection plus rapide et accompagnement clair.</p>
+                            </div>
+                            <div>
+                                <i class="bi bi-laptop" aria-hidden="true"></i>
+                                <h3>Freelances</h3>
+                                <p>Profil professionnel, missions adaptées et meilleure mise en avant.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="footer-brand" aria-label="AfriTalent - Accueil">
+                        <img src="images/afritalent-logo.svg" alt="" aria-hidden="true">
+                        <span class="brand-text">Afri<span>Talent</span></span>
+                    </a>
+                    <p>La plateforme freelance tech qui connecte l'expertise africaine aux projets ambitieux.</p>
+                </div>
+                <div>
+                    <h2>Liens</h2>
+                    <a href="freelances.html">Freelances</a>
+                    <a href="tarifs.html">Tarifs</a>
+                    <a href="about.html">À propos</a>
+                </div>
+                <div>
+                    <h2>Contact</h2>
+                    <a href="mailto:agent210601@gmail.com">agent210601@gmail.com</a>
+                    <a href="tel:+221710080086">+221 71 008 00 86</a>
+                    <a href="https://wa.me/221710080086">WhatsApp</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; <span class="current-year"></span> AfriTalent By Agent23. Tous droits réservés.</span>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" type="button" aria-label="Retour en haut" hidden>
+        <i class="bi bi-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+
+
+
+=======
+>>>>>>> ca1ad624bc2633c7c342d4851009f956834e0f89
+
+=======
+>>>>>>> ca1ad624bc2633c7c342d4851009f956834e0f89
