@@ -2,11 +2,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 ## Aceuil ##
-![Capture d'écran](https://agent243.github.io/Muteba-Wa-Muteba-Isreal-AfriTalent/images/Acceuil.png)
-=======
->>>>>>> ca1ad624bc2633c7c342d4851009f956834e0f89
-=======
->>>>>>> ca1ad624bc2633c7c342d4851009f956834e0f89
+![Capture d'écran](https://github.com/Agent243/Muteba-Wa-Muteba-Israel-AfriTalent/blob/main/images/Acceuil.png)
+
 
 ## 📋 Table des matières
 1. [Vue d'ensemble du site](https://agent243.github.io/Muteba-Wa-Muteba-Isreal-AfriTalent/)
