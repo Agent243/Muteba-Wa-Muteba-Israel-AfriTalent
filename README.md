@@ -1,6 +1,4 @@
 # AfriTalent - Documentation Complète
-<<<<<<< HEAD
-<<<<<<< HEAD
 ## Aceuil ##
 ![Capture d'écran](https://github.com/Agent243/Muteba-Wa-Muteba-Israel-AfriTalent/blob/main/images/Acceuil.png)
 
