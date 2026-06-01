@@ -176,17 +176,100 @@
     </button>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const yearSpan = document.querySelector('.current-year');
+            if (yearSpan) {
+                yearSpan.textContent = new Date().getFullYear();
+            }
+            const themeToggle = document.getElementById('theme-toggle');
+            const themeIcon = document.getElementById('theme-icon');
+            
+            // Récupération ou initialisation du thème stocké
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-bs-theme', savedTheme);
+            if (themeIcon) {
+                themeIcon.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+            }
+
+            if (themeToggle) {
+                themeToggle.addEventListener('click', () => {
+                    const currentTheme = document.documentElement.getAttribute('data-bs-theme');
+                    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                    
+                    document.documentElement.setAttribute('data-bs-theme', newTheme);
+                    localStorage.setItem('theme', newTheme);
+                    
+                    if (themeIcon) {
+                        themeIcon.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+                    }
+                });
+            }
+
+            
+            const backToTopBtn = document.getElementById('back-to-top');
+            if (backToTopBtn) {
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 400) {
+                        backToTopBtn.removeAttribute('hidden');
+                        backToTopBtn.style.display = 'block';
+                    } else {
+                        backToTopBtn.setAttribute('hidden', '');
+                        backToTopBtn.style.display = 'none';
+                    }
+                });
+
+                backToTopBtn.addEventListener('click', () => {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+
+            // 4. Animation fluide des compteurs statistiques
+            const counters = document.querySelectorAll('[data-goal]');
+            
+            const animateCounters = () => {
+                counters.forEach(counter => {
+                    const goal = parseInt(counter.getAttribute('data-goal'), 10);
+                    const duration = 2000; // Durée totale de l'animation : 2 secondes
+                    const startTime = performance.now();
+
+                    const updateNumber = (currentTime) => {
+                        const elapsed = currentTime - startTime;
+                        const progress = Math.min(elapsed / duration, 1);
+                        const currentValue = Math.floor(progress * goal);
+                        
+                        counter.textContent = currentValue.toLocaleString('fr-FR');
+
+                        if (progress < 1) {
+                            requestAnimationFrame(updateNumber);
+                        } else {
+                            counter.textContent = goal.toLocaleString('fr-FR');
+                        }
+                    };
+                    requestAnimationFrame(updateNumber);
+                });
+            };
+
+            
+            const statsSection = document.querySelector('.stats-band');
+            if (statsSection && 'IntersectionObserver' in window) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            animateCounters();
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.2 });
+                observer.observe(statsSection);
+            } else {
+                
+                animateCounters();
+            }
+        });
+    </script>
 </body>
 </html>
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
-
-
-=======
->>>>>>> ca1ad624bc2633c7c342d4851009f956834e0f89
-
-=======
->>>>>>> ca1ad624bc2633c7c342d4851009f956834e0f89

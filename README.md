@@ -4,6 +4,9 @@
 
 ## Freelance ##
 ![Capture d'écran](https://github.com/Agent243/Muteba-Wa-Muteba-Israel-AfriTalent/blob/main/images/Freelance.png)
+
+## Tarif ##
+![Capture d'écran](https://github.com/Agent243/Muteba-Wa-Muteba-Israel-AfriTalent/blob/main/images/Tarif.png)
 ## 📋 Table des matières
 1. [Vue d'ensemble du site](https://agent243.github.io/Muteba-Wa-Muteba-Isreal-AfriTalent/)
 2. [Structure HTML](https://github.com/Agent243/Muteba-Wa-Muteba-Isreal-AfriTalent/blob/main/index.html)
